@@ -1,18 +1,19 @@
 void main() {
-  //var myList = [1, 2, 3, 4, 5];
+  //var myList = [6, 2, 3, 4, 5];
 
-  ///sublist() method
-  // print(myList.sublist(1, 4)); // [2,3,4,5]
+  //sublist() method
+  //print(myList.sublist(0, 4)); // [2,3,4,5]
 
-  // print(myList.sublist(1, 3));
-  // Note that end element is exclusive while start is inclusive.
+  //  print(myList.sublist(1, 3));
+  ///TODO check wording
+  // // Note that end element is exclusive while start is inclusive.
 
-  //getRange():
+  // //getRange():
 
-  // print(myList.getRange(1, 4));
+  // print(myList.getRange(0, 4));
 
   // replaceRange():
-  // var rList = [0, 1, 2, 3, 4, 5, 6];
+  // var rList = [0, 1, 4, 3, 4, 5, 6];
   // rList.replaceRange(2, 3, [10]);
   // print('$rList');
 
@@ -20,7 +21,7 @@ void main() {
   // myList.shuffle();
   // print('shuffle my $myList');
 
-  // reversed method
+  //reversed method
   // var descList = [6, 5, 4, 3, 2, 1];
   // print(descList.reversed.toList()); // [1,2,3,4,5,6]
 
@@ -28,14 +29,16 @@ void main() {
   // print(ascList.reversed.toList());
 
   //asMap()
-  //List<String> sports = ['cricket', 'football', 'tennis', 'baseball'];
-//  Map<int, String> map = sports.asMap();
-//  print(map); //
+  List<String> sports = ['cricket', 'football', 'tennis', 'baseball'];
+  // Map<int, String> map = sports.asMap();
+  // print(map); //
+  // print(sports.last);
 
 //any
-  // print(sports.any((e) => e.contains('cricket'))); //
+  print(sports.any((e) => e.startsWith('cricket'))); //
+
 // //every
-//   print(sports.every((e) => e.startsWith('a')));
+  print(sports.every((e) => e.startsWith('a')));
 // where
 
   // List<int> first = [1, 2, 3, 4, 5, 6, 7];

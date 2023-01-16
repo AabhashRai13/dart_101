@@ -10,6 +10,7 @@ class Person {
 }
 
 void main() {
-  Person person1 = Person();
+  Person? person1 = Person(name: "Aabash", age: 22222);
+
   person1.showOutput();
 }

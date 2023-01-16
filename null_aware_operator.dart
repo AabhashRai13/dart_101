@@ -2,16 +2,12 @@
 // (?.), (??), (??=)
 
 class Num {
-  int? num = 10;
+  int? num;
 }
 
 main() {
   var n = Num();
-  int number;
-  number = n.num??0;
+  int? number;
+  number = n.num ??= 999;
   print("number $number");
-
-  /*
-  print(number ??= 100);
-   */
 }

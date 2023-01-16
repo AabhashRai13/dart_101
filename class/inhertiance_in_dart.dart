@@ -5,11 +5,13 @@ class Player {
   Player(this.name, this.country) {
     print(this.name);
     print(this.country);
+    print("----------above is from constructor-----------");
   }
 
   void showOutput() {
     print(name);
     print(country);
+    print("----------above is from super showoutput-----------");
   }
 }
 
